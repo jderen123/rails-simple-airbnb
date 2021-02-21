@@ -1,0 +1,76 @@
+
+.top-card, .below-card, .book-place, .details, .socials {
+  background-color: #F8F9FA;
+  padding: 20px 10px 0 20px;
+  margin-bottom: 20px;
+   border-radius: 3px;
+   p{
+    padding-bottom: 28px;
+    font-size: 22px;
+    margin-left: 0px
+   }
+
+}
+.map {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+.main-cont {
+  margin-top: -75px;
+}
+
+.below-card p {
+  font-size: 15px;
+  padding-right: 10px;
+  padding-bottom: 500px;
+}
+
+.book-place p {
+font-size: 18px;
+font-style: bold;
+padding-bottom: 0px;
+margin-bottom: 4px;
+}
+.input-group {
+  width: 97%;
+}
+
+.bottom-btn1 {
+  margin-bottom: 20px;
+
+  width: 97%;
+
+}
+.details p {
+  font-size: 15px;
+  padding-bottom: 8px;
+  line-height: 1.4;
+
+}
+.details i {
+  font-size: 18px;
+}
+.details h2 {
+  font-size: 26px;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials p {
+  padding-bottom: 0;
+  margin-bottom: 22px;
+  font-size: 17px;
+  line-height: 0;
+
+
+
+}
+.socials i {
+  font-size: 30px;
+  margin-bottom: 22px;
+
+}
