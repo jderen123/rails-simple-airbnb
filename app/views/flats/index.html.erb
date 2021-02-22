@@ -20,7 +20,7 @@
     <div class="footy">
       <%= link_to "More Info", flat_path(flat) %>
       <%= link_to "Edit", edit_flat_path(flat), style: "color: #FFC007"%>
-      <%= link_to "Remove", flat_path(flat), method: :delete, style: "color: #E04856" %>
+      <%= link_to "Remove", flat_path(flat), method: :delete, data: { confirm: "Are you sure you want to delete this listing" }, style: "color: #E04856" %>
     </div>
   </div>
 </div>

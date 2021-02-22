@@ -1,6 +1,6 @@
 class FlatsController < ApplicationController
   def index
-    @flats = Flat.all
+    @flats = Flat.search(params[:search])
   end
   def show
     @flat = Flat.find(params[:id])
@@ -28,6 +28,14 @@ class FlatsController < ApplicationController
       render :edit
     end
   end
+  def destroy
+    @flat = Flat.find(params[:id])
+
+    @flat.destroy
+    redirect_to flats_path
+  end
+
+
 
 
   def flat_params
