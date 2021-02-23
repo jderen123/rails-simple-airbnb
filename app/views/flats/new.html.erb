@@ -1,17 +1,16 @@
 <div class="container mainconte">
   <h1>Add a new flat</h1>
- <%= simple_form_for @flat do |f| %>
-   <div id="formholder">
+  <%= simple_form_for @flat do |f| %>
+  <div id="formholder">
     <%= f.input :name, :class => "form-group" %>
     <%= f.input :address %>
     <%= f.input :description %>
     <%= f.input :price_per_night %>
     <%= f.input :number_of_guests %>
     <div class="btngroup d-flex">
-    <%= f.button :submit, :class => "btn btn-primary mr-3 mb-3"  %>
-  <% end %>
-    <%= link_to "Cancel", flats_path, class: "btn btn-danger mb-3" %>
+      <%= f.button :submit, :class => "btn btn-primary mr-3 mb-3"  %>
+      <% end %>
+      <%= link_to "Cancel", flats_path, class: "btn btn-danger mb-3" %>
+    </div>
   </div>
-
-</div>
 </div>

@@ -3,21 +3,21 @@
 
 .main {
   margin: 30px 25px 0px 175px
-
 }
 
 
 
 .carder {
-  box-shadow: 2px 4px 5px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, .2);
   margin-bottom: 20px;
 
 
-img {
-  width: 350px;
-  height: 180px;
+  img {
+    width: 350px;
+    height: 180px;
+  }
 }
-}
+
 .flat-contents {
   background-color: #F4F4F4;
   padding-left: 30px;
@@ -29,17 +29,19 @@ img {
   font-size: 17px;
 }
 
-.bottom-icons p  {
-margin-left: 8px;
-line-height: 1.1;
+.bottom-icons p {
+  margin-left: 8px;
+  line-height: 1.1;
 }
+
 .footy {
   display: flex;
   background-color: white;
   padding-left: 30px;
-  border: 1px rgba(101,101,101, .1) ridge;
+  border: 1px rgba(101, 101, 101, .1) ridge;
   align-items: center;
-  a{
+
+  a {
     padding: 20px 15px 0px 0px;
     margin-bottom: 15px;
   }

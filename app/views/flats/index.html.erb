@@ -1,33 +1,38 @@
 <div class="main">
-<h1 class="display-6">All our flats</h1>
-<p> All <%= @flats.count %> Flats </p>
+  <h1 class="display-6">All our flats</h1>
+  <p> All
+    <%= @flats.count %> Flats </p>
 </div>
-  <div class="gird-container container mt-3">
-    <div class="row">
-
-<% @flats.each do |flat| %>
-  <div class= "col-4">
-    <div class= "carder">
-  <img src="https://source.unsplash.com/random/1200x400">
-  <div class="flat-contents">
-    <p><strong><%= flat.name %></strong></p>
-    <p> <%= flat.address %></p>
-      <div class="bottom-icons">
-        <i class="fas fa-user-friends"></i><p style="margin-right: 30px;"> <%= flat.number_of_guests %> </p>
-        <i class="fas fa-euro-sign"></i><p><%= flat.price_per_night %></p>
+<div class="gird-container container mt-3">
+  <div class="row">
+    <% @flats.each do |flat| %>
+    <div class="col-4">
+      <div class="carder">
+        <img src="https://source.unsplash.com/random/1200x400">
+        <div class="flat-contents">
+          <p><strong>
+              <%= flat.name %></strong></p>
+          <p>
+            <%= flat.address %>
+          </p>
+          <div class="bottom-icons">
+            <i class="fas fa-user-friends"></i>
+            <p style="margin-right: 30px;">
+              <%= flat.number_of_guests %>
+            </p>
+            <i class="fas fa-euro-sign"></i>
+            <p>
+              <%= flat.price_per_night %>
+            </p>
+          </div>
+        </div>
+        <div class="footy">
+          <%= link_to "More Info", flat_path(flat) %>
+          <%= link_to "Edit", edit_flat_path(flat), style: "color: #FFC007"%>
+          <%= link_to "Remove", flat_path(flat), method: :delete, data: { confirm: "Are you sure you want to delete this listing" }, style: "color: #E04856" %>
+        </div>
       </div>
-  </div>
-    <div class="footy">
-      <%= link_to "More Info", flat_path(flat) %>
-      <%= link_to "Edit", edit_flat_path(flat), style: "color: #FFC007"%>
-      <%= link_to "Remove", flat_path(flat), method: :delete, data: { confirm: "Are you sure you want to delete this listing" }, style: "color: #E04856" %>
     </div>
+    <% end %>
   </div>
-</div>
-
-
-
-<% end %>
-
-</div>
 </div>
